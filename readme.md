@@ -1,7 +1,5 @@
 
 //TODO 
-- Couleur police nb to-do
-- Sauvegarder la préférence du thème (dark/light)
 
 
 //NICE-TO-HAVE
@@ -13,7 +11,6 @@
 
 
 //BUG
-- Problème lorsqu'on supprime plusieurs cartes
 
 
 Card

@@ -3,22 +3,10 @@ const onGoingList = document.querySelector(".ongoing");
 const lists = [...document.querySelectorAll(".list")];
 const addToDoForm = document.querySelector(".form__todo");
 const deleteZone = document.querySelector(".delete");
-const theme = document.querySelector(".theme")
-const body = document.body
-let id = 1;
 
+let id = 1;
 let toDos = [];
 
-/* Theme changer */
-theme.addEventListener("click", (e) => {
-  if(body.classList.contains("dark")) {
-    body.classList.remove("dark")
-    theme.src = "./images/moon.svg"
-  } else {
-    body.classList.add("dark")
-    theme.src = "./images/light.svg"
-  }
-})
 
 /* Exemples de to do chargés si aucunes to do n'a été trouvé dans le local storage */
 let toDosExamples = [
