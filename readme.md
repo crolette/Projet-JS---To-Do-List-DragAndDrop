@@ -1,8 +1,7 @@
 
 //TODO 
-- Nb de To-Do dans une liste
-
-
+- Couleur police nb to-do
+- Sauvegarder la préférence du thème (dark/light)
 
 
 //NICE-TO-HAVE
