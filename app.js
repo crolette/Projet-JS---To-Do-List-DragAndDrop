@@ -91,8 +91,7 @@ function addEventDelete() {
 
 
 function deleteToDo(e) {
-  console.log("delete")
-  console.log(toDos)
+  e.stopImmediatePropagation()
   const id = e.dataTransfer.getData("text/plain");
   console.log("delete " + id)
   // Filtre les to do qui n'ont pas l'id de l'item à supprimer
@@ -102,8 +101,6 @@ function deleteToDo(e) {
   localStorage.setItem("id", highestIdToDo());
   const toDelete = document.querySelector(`[data-id='${id}']`);
   const parent = document.querySelector(`[data-id='${id}']`).parentNode
-  console.log(parent)
-  console.log(toDelete)
   parent.removeChild(toDelete);
   nbToDoPerList()
 }
